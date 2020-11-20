@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/arl_arl_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:background="#6000"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/arl_arl_tv"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:textColor="#FFF"
+            android:text="新闻标题"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/arl_arl_ll"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+
+            <!--<View-->
+                <!--android:background="@drawable/arl_red_dot"-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_height="10dp" />-->
+            <!--<View-->
+                <!--android:background="@drawable/arl_white_dot"-->
+                <!--android:layout_width="10dp"  android:layout_marginRight="10dp"-->
+                <!--android:layout_height="10dp" />-->
+            <!--<View-->
+                <!--android:background="@drawable/arl_white_dot"-->
+                <!--android:layout_width="10dp"  android:layout_marginRight="10dp"-->
+                <!--android:layout_height="10dp" />-->
+            <!--<View-->
+                <!--android:background="@drawable/arl_white_dot"-->
+                <!--android:layout_width="10dp"  android:layout_marginRight="10dp"-->
+                <!--android:layout_height="10dp" />-->
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

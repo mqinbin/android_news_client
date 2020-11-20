@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titile_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="频道编辑"
+            android:textColor="#FFF"
+            android:textSize="24sp"/>
+
+
+    </RelativeLayout>
+
+    <com.qinbin.lib_dsgl.DragSortGridLayout
+        android:id="@+id/dialog_show_dsgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="#666"
+        android:gravity="center"
+        android:text="点击添加到导航条"
+        android:textColor="#FFF"
+        android:textSize="16sp"/>
+
+    <com.qinbin.lib_dsgl.DragSortGridLayout
+        android:id="@+id/dialog_hide_dsgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

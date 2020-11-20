@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/news_comment_edit"
+    android:orientation="vertical">
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/item_picture_iv"
+        android:src="@drawable/pic_default_list"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"/>
+    <TextView
+        android:id="@+id/item_picture_tv"
+        android:text="新闻标题"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

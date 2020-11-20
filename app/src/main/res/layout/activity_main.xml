@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            style="@style/BottomRadioButton"
+            android:id="@+id/main_home_rb"
+
+            android:drawableTop="@drawable/b_home_selector"
+            android:text="首页"/>
+        <RadioButton   android:id="@+id/main_news_rb"
+            style="@style/BottomRadioButton"
+            android:drawableTop="@drawable/b_news_selector"
+            android:text="新闻"/>
+        <RadioButton   android:id="@+id/main_service_rb"
+            style="@style/BottomRadioButton"
+            android:drawableTop="@drawable/b_service_selector"
+            android:text="服务"/>
+        <RadioButton   android:id="@+id/main_settings_rb"
+            style="@style/BottomRadioButton"
+            android:drawableTop="@drawable/b_settings_selector"
+            android:text="个人"/>
+
+
+    </RadioGroup>
+</LinearLayout>

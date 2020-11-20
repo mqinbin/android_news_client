@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titile_bg">
+
+        <ImageView
+            android:id="@+id/detail_back_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_back"/>
+
+        <ImageView
+            android:id="@+id/detail_share_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_share"/>
+
+        <ImageView
+            android:id="@+id/detail_favorite_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@id/detail_share_iv"
+            android:scaleType="center"
+            android:src="@drawable/icon_favorite"/>
+
+        <ImageView
+            android:id="@+id/detail_textsize_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@id/detail_favorite_iv"
+            android:scaleType="center"
+            android:src="@drawable/icon_textsize"/>
+
+        <ImageView
+            android:id="@+id/detail_download_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@id/detail_textsize_iv"
+            android:scaleType="center"
+            android:src="@drawable/icon_download"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/detail_wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ProgressBar
+            android:id="@+id/detail_pb"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+</LinearLayout>

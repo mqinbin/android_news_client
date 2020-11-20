@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/item_news_iv"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/pic_default_list"/>
+
+    <TextView
+        android:id="@+id/item_news_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/item_news_iv"
+        android:maxLines="2"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:text="新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题"/>
+
+    <TextView
+        android:id="@+id/item_news_pubdate_tv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/item_news_title_tv"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/item_news_iv"
+        android:text="出版时间"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/news_comment_num"/>
+</RelativeLayout>
